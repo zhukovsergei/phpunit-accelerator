@@ -1,6 +1,5 @@
 # PHPUnit Accelerator
-
-[![Build Status](https://secure.travis-ci.org/mybuilder/phpunit-accelerator.svg?branch=master)](http://travis-ci.org/mybuilder/phpunit-accelerator)
+What I found is that PHPUnit is really hard to debug memory with, because it in itself keeps a lot of objects in memory before actually starting any test so the initial memory is jumping depending by the number of tests available - it creates a new test class instance for each test, so UserTest having 1k test declarations/function will result in 1k UserTest class instances before it actually starts processing them, which I'd say is more of a inefficiency from the PHPUnit side, the more tests you have the higher the starting memory will be.
 
 Inspired by [Kris Wallsmith faster PHPUnit article](http://kriswallsmith.net/post/18029585104/faster-phpunit), we've created a [PHPUnit](http://phpunit.de) test listener that speeds up PHPUnit tests about 20% by freeing memory.
 
