@@ -1,6 +1,7 @@
 {
-    "name": "mybuilder/phpunit-accelerator",
+    "name": "zhukovsergei/phpunit-accelerator",
     "description": "PHPUnit accelerator",
+    "version": "6.0.0",
     "keywords": ["phpunit", "accelerator", "memory", "property", "free", "fast"],
     "license": "MIT",
     "minimum-stability": "stable",
@@ -11,7 +12,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.0",
         "phpunit/phpunit": ">=8.0"
     },
     "autoload": {
